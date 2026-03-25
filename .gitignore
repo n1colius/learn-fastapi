@@ -27,3 +27,6 @@ Thumbs.db
 
 # Alembic — don't ignore versions/, they should be committed
 # (equivalent to committing your Laravel migration files)
+
+# Claude Code worktrees — local only, never commit
+.claude/worktrees/
