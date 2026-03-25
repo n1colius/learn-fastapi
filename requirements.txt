@@ -1,0 +1,22 @@
+# ============================================================
+# requirements.txt — Python's equivalent of composer.json
+#
+# Install all dependencies with:
+#   pip install -r requirements.txt
+#
+# Unlike composer, pip does not create a lock file by default.
+# To pin exact versions after install, run:
+#   pip freeze > requirements.txt
+# ============================================================
+
+fastapi==0.115.0            # The web framework (like Laravel's core)
+uvicorn[standard]==0.30.0   # ASGI server — runs your app (like php artisan serve / nginx-unit)
+sqlalchemy==2.0.36          # ORM — like Eloquent
+alembic==1.13.3             # Database migrations — like php artisan migrate
+pydantic[email]==2.9.0      # Data validation + serialization — like Form Requests + API Resources
+pydantic-settings==2.5.2    # Reads .env into typed Settings class — like config/app.php
+python-jose[cryptography]==3.3.0  # JWT tokens — like tymon/jwt-auth
+passlib[bcrypt]==1.7.4      # Password hashing — like Hash::make() / Hash::check()
+bcrypt==4.0.1               # passlib 1.7.4 is not compatible with bcrypt 5.x
+python-dotenv==1.0.1        # Loads .env file — same as Laravel's .env handling
+python-multipart==0.0.12    # Required for OAuth2 login form (username/password fields)

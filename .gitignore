@@ -1,0 +1,29 @@
+# Virtual environment — like vendor/ in Laravel, never commit
+venv/
+.venv/
+env/
+
+# Python bytecode cache — auto-generated, never commit
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables — like Laravel's .env
+.env
+
+# SQLite database file (local dev only)
+*.db
+*.sqlite3
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Alembic — don't ignore versions/, they should be committed
+# (equivalent to committing your Laravel migration files)
