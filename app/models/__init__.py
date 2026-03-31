@@ -9,3 +9,6 @@ from app.models.user import User
 from app.models.post import Post, post_tags
 from app.models.comment import Comment
 from app.models.tag import Tag
+from app.models.ref_commodity import RefCommodity
+from app.models.ref_region import RefRegion
+from app.models.producer import Producer
